@@ -11,7 +11,7 @@ with pkgs;
     };
 
     meta = with lib; {
-      description = "An XMLTV provider for WeAreOne.FM internet radio stations.";
+      description = "An XMLTV grabber for WeAreOne.FM internet radio stations.";
       homepage = "https://codeberg.org/mart-w/weareone-xmltv";
     };
   }
