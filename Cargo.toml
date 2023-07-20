@@ -1,9 +1,19 @@
 [package]
 name = "weareone-xmltv"
+description = "An XMLTV grabber for WeAreOne.FM internet radio stations."
 version = "0.1.0"
+authors = ["Martin Wurm <cargo-weareone-xmltv@mart-w.de>"]
+readme = "README.md"
+repository = "https://codeberg.org/mart-w/weareone-xmltv"
+license = "LGPL-3.0"
+keywords = ["xmltv", "grabber", "scraper", "weareone", "technobase"]
+categories = ["command-line-utilities", "api-bindings"]
+
 edition = "2021"
 
-# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+[[bin]]
+name = "tv_grab_de_weareone"
+path = "src/main.rs"
 
 [dependencies]
-clap = { features = ["derive"] }
+clap = {version = "4", features = ["derive"] }
